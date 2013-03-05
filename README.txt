@@ -1,2 +1,1 @@
-This is my toy project to see
-how kelly-Lauchbaum model would chang dynamically mimicing some voal tract characteristics
+This is my toy project to play with Kelly-Lochbaum model

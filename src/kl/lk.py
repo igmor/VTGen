@@ -72,10 +72,10 @@ def setupKLAreaSizes():
 def showFrame():
     app = wx.App(redirect=True)
     top = wx.Frame(None, title="Kelly-Lauchbaum simulation", size=(FRAME_WIDTH,FRAME_HEIGHT))
-    panel = wx.Panel(top, -1)
+    panel = wx.Panel(top, -1, size=(FRAME_WIDTH,FRAME_HEIGHT))
     hSizer = wx.BoxSizer(wx.HORIZONTAL)    
-    fslider = FloatSlider(panel, -1, 0.2, 0.10004, 1.00008, 1e-4, size=wx.DefaultSize, style=wx.SL_VERTICAL)
-    fslider1 = FloatSlider(panel, -1, 0.2, 0.10004, 1.00008, 1e-4, size=wx.DefaultSize, style=wx.SL_VERTICAL)
+    fslider = FloatSlider(panel, -1, 0.2, 0.10004, 1.00008, 1e-4, style=wx.SL_VERTICAL, size=(FRAME_WIDTH/20,FRAME_HEIGHT))
+    fslider1 = FloatSlider(panel, -1, 0.2, 0.10004, 1.00008, 1e-4, style=wx.SL_VERTICAL, size=(FRAME_WIDTH/20,FRAME_HEIGHT))
     hSizer.Add(fslider)	
     hSizer.Add(fslider1)	    
     setupKLAreaSizes()
